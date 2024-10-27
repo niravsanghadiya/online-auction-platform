@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineAuctionPlatform.Domain", "OnlineAuctionPlatform.Domain\OnlineAuctionPlatform.Domain.csproj", "{8DB24BD8-089A-41F5-A28F-FEB28ABDE35E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineAuctionPlatform.Application", "OnlineAuctionPlatform.Application\OnlineAuctionPlatform.Application.csproj", "{7822A218-0A10-45D7-980F-FECBA8DE4384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineAuctionPlatform.Infrastructure", "OnlineAuctionPlatform.Infrastructure\OnlineAuctionPlatform.Infrastructure.csproj", "{553A7B30-B510-4CF2-9AE0-00D45B5CC97C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineAuctionPlatform.Presentation", "OnlineAuctionPlatform.Presentation\OnlineAuctionPlatform.Presentation.csproj", "{4E146546-43E4-4AD8-8034-D76664EF6DE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DB24BD8-089A-41F5-A28F-FEB28ABDE35E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB24BD8-089A-41F5-A28F-FEB28ABDE35E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB24BD8-089A-41F5-A28F-FEB28ABDE35E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB24BD8-089A-41F5-A28F-FEB28ABDE35E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7822A218-0A10-45D7-980F-FECBA8DE4384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7822A218-0A10-45D7-980F-FECBA8DE4384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7822A218-0A10-45D7-980F-FECBA8DE4384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7822A218-0A10-45D7-980F-FECBA8DE4384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553A7B30-B510-4CF2-9AE0-00D45B5CC97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553A7B30-B510-4CF2-9AE0-00D45B5CC97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553A7B30-B510-4CF2-9AE0-00D45B5CC97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553A7B30-B510-4CF2-9AE0-00D45B5CC97C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E146546-43E4-4AD8-8034-D76664EF6DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E146546-43E4-4AD8-8034-D76664EF6DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E146546-43E4-4AD8-8034-D76664EF6DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E146546-43E4-4AD8-8034-D76664EF6DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
