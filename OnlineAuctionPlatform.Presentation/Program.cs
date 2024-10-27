@@ -18,6 +18,7 @@ builder.Services.AddDbContext<AuctionContext>(options =>
 
 builder.Services.AddScoped<IAuctionRepository, AuctionRepository>();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

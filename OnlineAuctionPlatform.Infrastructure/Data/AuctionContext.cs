@@ -22,10 +22,10 @@ namespace OnlineAuctionPlatform.Infrastructure.Data
 
             // Configure entity relationships and constraints
 
-            modelBuilder.Entity<User>()
-                .HasMany(u => u.AuctionItems)
-                .WithOne(a => a.User)
-                .HasForeignKey(a => a.UserId);
+            //modelBuilder.Entity<User>()
+            //    .HasMany(u => u.AuctionItems)
+            //    .WithOne(a => a.User)
+            //    .HasForeignKey(a => a.UserId);
 
             //modelBuilder.Entity<User>()
             //    .HasMany(u => u.Bids)
