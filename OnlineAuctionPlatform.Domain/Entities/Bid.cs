@@ -11,9 +11,11 @@ namespace OnlineAuctionPlatform.Domain.Entities
         public Guid Id { get; set; }
         public Guid AuctionItemId { get; set; }
         public decimal Amount { get; set; }
-        public DateTime BidTime { get; set; }           
+        public DateTime BidTime { get; set; }
         public Guid UserId { get; set; }
         public AuctionItem AuctionItem { get; set; }
+
+        public virtual User User { get; set; }
         
     }
 }

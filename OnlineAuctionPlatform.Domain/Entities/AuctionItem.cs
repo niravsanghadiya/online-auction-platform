@@ -13,9 +13,9 @@ namespace OnlineAuctionPlatform.Domain.Entities
         public string Description { get; set; }
         public decimal StartingBid { get; set; }
         public DateTime EndDate { get; set; }
-        public int UserId { get; set; }
-        public User User { get; set; }
-        public List<Bid> Bids { get; set; }
+        public Guid UserId { get; set; }
+        public virtual User User { get; set; }
+        public virtual List<Bid> Bids { get; set; }
 
         public AuctionItem()
         {

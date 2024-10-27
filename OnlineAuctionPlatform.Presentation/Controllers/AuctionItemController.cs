@@ -12,33 +12,36 @@ namespace OnlineAuctionPlatform.Presentation.Controllers
     public class AuctionItemController : ControllerBase
     {       
         private readonly IAuctionRepository _auctionRepository;
+        private readonly IRepository<AuctionItem> _auctionItemRepository;
 
-        public AuctionItemController(IAuctionRepository auctionRepository)
+        public AuctionItemController(IAuctionRepository auctionRepository, IRepository<AuctionItem> auctionItemRepository)
         {
             _auctionRepository = auctionRepository;
+            _auctionItemRepository = auctionItemRepository;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAuctionItems()
         {
-            var auctionItems = await _auctionRepository.GetAllAsync();
+
+            var auctionItems = await _auctionItemRepository.GetAllAsync();
             return Ok(auctionItems);
         }
 
         [HttpPost]
         public async Task<IActionResult>  CreateAuctionItem(AuctionItem auctionItem)
         {         
-            await _auctionRepository.AddAsync(auctionItem);  
+            await _auctionItemRepository.AddAsync(auctionItem);  
             return CreatedAtAction(nameof(CreateAuctionItem),new { id=auctionItem.Id} , auctionItem);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateAuctionItem(Guid id,AuctionItem auctionItem)
         {
-            var auctionItemObj = await _auctionRepository.GetByIdAsync(id);
+            var auctionItemObj = await _auctionItemRepository.GetByIdAsync(id);
             if(auctionItemObj != null)
             {
-                await _auctionRepository.UpdateAsync(auctionItem);
+                await _auctionItemRepository.UpdateAsync(auctionItem);
                 return NoContent();
             }
             else
@@ -51,7 +54,7 @@ namespace OnlineAuctionPlatform.Presentation.Controllers
         [HttpDelete]
         public async Task<IActionResult> DeleteAuctionItem(Guid id)
         {
-            var auctionItemObj = await _auctionRepository.GetByIdAsync(id);
+            var auctionItemObj = await _auctionItemRepository.GetByIdAsync(id);
             if (auctionItemObj != null)
             {
                 await _auctionRepository.DeleteAsync(id);
